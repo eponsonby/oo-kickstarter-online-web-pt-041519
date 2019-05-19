@@ -10,8 +10,7 @@ class Backer
   
   def back_project(project)
     @backed_projects << project
-    story.author = self
-    project.
+    project.backers = self
   end
   
   
