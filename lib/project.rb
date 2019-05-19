@@ -13,9 +13,6 @@ class Project
   
   def add_backer(backer_instance)
     @backers << backer_instance
-    # backer_instance.back_project(self)
-    #   while !@backed_projects.include?(self)
-    # end
   end
   
 end
