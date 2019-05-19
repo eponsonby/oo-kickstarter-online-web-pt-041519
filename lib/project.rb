@@ -6,7 +6,7 @@ class Project
     @title = title
   end
   
-  def backers=(backers)
+  def backers=(backers) #project belongs to a backer
     @backers = backers
     backers.back_project(self)
   end
