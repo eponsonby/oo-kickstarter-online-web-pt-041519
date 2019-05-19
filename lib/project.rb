@@ -7,6 +7,7 @@ class Project
   end
   
   def backers=(backers)
+    @backers = backers
     
   
   def add_backer(backer_instance)
