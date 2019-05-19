@@ -15,4 +15,8 @@ class Project
     @backers << backer
   end
   
+   book.add_backer(steven)
+
+    expect(book.backers).to include(steven)
+  end
 end
