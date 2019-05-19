@@ -9,6 +9,7 @@ class Project
   def backers=(backers)
     @backers = backers
     backers.back_project(self)
+  end
   
   def add_backer(backer_instance)
     @backers << backer_instance
