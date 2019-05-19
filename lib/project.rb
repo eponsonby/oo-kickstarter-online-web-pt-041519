@@ -6,9 +6,9 @@ class Project
     @title = title
   end
   
-  def add_backer(backer_instance)
-    @backers << backer_instance
-    backer_instance.back_project(project) unless backers.backed_projects.include?(self)
+  def add_backer(backer)
+    @backers << backer
+    backer.back_project(project) unless backers.backed_projects.include?(self)
   end
   
 end
