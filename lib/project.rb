@@ -6,9 +6,9 @@ class Project
     @title = title
   end
   
-  def backers=(backers)
+  def backer=(backer)
     @backers = backers
-    backers.
+    backers
   
   def add_backer(backer_instance)
     @backers << backer_instance
