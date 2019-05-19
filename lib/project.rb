@@ -8,7 +8,8 @@ class Project
   
   def backers=(backers) #project belongs to a backer
     @backers = backers
-    backer.back_project(project) #adds project to backed_projects unless backers.backed_projects.include?(self)
+    backer.back_project(project) #adds project to backed_projects, owned by a backer
+    unless backers.backed_projects.include?(self)
   end
   
   def add_backer(backer_instance)
