@@ -10,9 +10,8 @@ class Backer
   
   def back_project(project)
     @backed_projects << project
-    # project.add_backer(self)
-    #   while !@backers.include?(self)
-    # end
+    story.author = self
+    project.
   end
   
   
