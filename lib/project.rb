@@ -6,14 +6,9 @@ class Project
     @title = title
   end
   
-  def backers=(backers) #project belongs to a backer
-    @backers = backers
-    backer.back_project(project) #adds project to backed_projects, owned by a backer
-    unless backers.backed_projects.include?(self)
-  end
-  
   def add_backer(backer_instance)
     @backers << backer_instance
+    backer_instance.back_project(project) unless backers.backed_projects.include?(self)
   end
   
 end
