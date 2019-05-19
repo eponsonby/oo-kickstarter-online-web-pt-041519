@@ -11,12 +11,7 @@ class Project
   end
   
   def add_backer(backer)
-    backer.back_project(self) unless backer.backed_projects.include?(self)
     @backers << backer
-  end
-  
-   book.add_backer(steven)
-
-    expect(book.backers).to include(steven)
+    backer.back_project(self) unless backer.backed_projects.include?(self)
   end
 end
