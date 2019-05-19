@@ -6,7 +6,7 @@ class Project
     @title = title
   end
   
-  def backer=(backer)
+  def backers=(backers)
     @backers = backers
     backers
   
