@@ -8,7 +8,7 @@ class Project
   
   def backers=(backers) #project belongs to a backer
     @backers = backers
-    backers.back_project(self)
+    backers.back_project(self) unless 
   end
   
   def add_backer(backer_instance)
